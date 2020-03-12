@@ -8,14 +8,14 @@ However, little attention has been paid to the robustness of such models, in con
 
 
 ## Model & Approach
-The model I use in this project is strucutre2vec, which is an effective and scalable model for structured data representation based on the idea of embedding latent variable models into feature spaces and learning such feature spaces using discriminative information. Strucutre2vec extracts feature by performing a sequence of function mappings in a way similar to graphical model inference procedures, such as mean-field and belief propagation.
+The model I use in this project is [strucutre2vec](https://arxiv.org/abs/1603.05629), which is an effective and scalable model for structured data representation based on the idea of embedding latent variable models into feature spaces and learning such feature spaces using discriminative information. Strucutre2vec extracts feature by performing a sequence of function mappings in a way similar to graphical model inference procedures, such as mean-field and belief propagation.
 
 The adversarial approaches I use in this project include four. The first is RL-S2V. It can learn a Q-function parameterized by S2V to perform the attack. The second is RandSampling. This is the simplest attack method that randomly adds or deletes edges from the original graph. The third is GradArgmax. This is a white-box attack since it requires the gradient information, and the gradient considers all pairs of nodes in a graph. Fourth is GeneticAlg, which is a kind of evolutionary computing. It is an instantiation of the general genetic algorithm framework, and it is a black-box attack method.
 
 
 ## Input & Output
-Input: the original graphs
-Output: the modified graphs (i.e. the adversarial examples concerning the original graphs), as well as the comparison picture which depicts the modification caused by the adversarial attack (i.e. the structure difference between the original graph and the adversarial graph).
+* Input: the original graphs
+* Output: the modified graphs (i.e. the adversarial examples concerning the original graphs), as well as the comparison picture which depicts the modification caused by the adversarial attack (i.e. the structure difference between the original graph and the adversarial graph).
 
 
 ## Deliverables
@@ -137,11 +137,11 @@ cd graph-adversarial-attack/code/node_attack
 
 
 ## Adversarial Visualization Example
-After running the graph adversarial attack, the original graphs, the modified graphs (i.e. the adversarial examples concerning the original graphs), and the comparison picture which depicts the modification caused by the adversarial attack (i.e. the structure difference between the original graph and the adversarial graph) will be stored in ```data_dir```. The adversarial visualization will look like the picture displayed below.
-![](pic/comparison_0.pdf)
+After running the graph adversarial attack, the original graphs, the modified graphs (i.e. the adversarial examples concerning the original graphs), and the comparison picture which depicts the modification caused by the adversarial attack (i.e. the structure difference between the original graph and the adversarial graph) will be saved in ```data_dir```. The adversarial visualization will look like the picture displayed below.
+
+![](pic/comparison.png)
 
 
 ## Reference
 - [Discriminative Embeddings of Latent Variable Models for Structured Data](https://arxiv.org/abs/1603.05629)
 - [Adversarial Attack on Graph Structured Data](https://arxiv.org/abs/1806.02371)
-https://arxiv.org/abs/1806.02371
