@@ -139,7 +139,7 @@ cd graph-adversarial-attack/code/node_attack
 ## Adversarial Visualization Example
 After running the graph adversarial attack, the original graphs, the modified graphs (i.e. the adversarial examples concerning the original graphs), and the comparison picture which depicts the modification caused by the adversarial attack (i.e. the structure difference between the original graph and the adversarial graph) will be saved in ```data_dir```. The adversarial visualization will look like the picture displayed below.
 
-![](pic/comparison.png)
+![](pic/comparison_0.png)
 
 
 ## Reference
