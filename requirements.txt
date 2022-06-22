@@ -16,7 +16,7 @@ jupyter-core==4.6.1
 kiwisolver==1.1.0
 matplotlib==2.2.3
 networkx==1.11
-numpy==1.16.6
+numpy==1.22.0
 pathlib2==2.3.5
 pexpect==4.7.0
 pickleshare==0.7.5
